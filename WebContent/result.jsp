@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ page import="java.util.*" %>
+<%@ page import="java.io.*" %>
+<%@ page import="javax.servlet.*" %>
+<%@ page import="javax.servlet.http.*" %>
 <html>
 <head>
 <title>Insert title here</title>
@@ -15,6 +18,9 @@
 		out.print("<br>try next: " + it.next());
 	}
 %>
+</p>
+<p>
+<% out.println("Admin email : " + getServletContext().getInitParameter("adminEmail")); %>
 </p>
 </body>
 </html>
